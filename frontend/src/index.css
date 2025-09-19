@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body background set with a hex color instead of @apply to avoid Tailwind purge issues */
+body { background-color: #F9FAFB; }

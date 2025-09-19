@@ -1,0 +1,3 @@
+import { NavLink } from "react-router-dom";
+const NavItem = ({to,children}) => (<NavLink to={to} className={({isActive})=>`px-3 py-2 rounded-md text-sm font-medium ${isActive ? "bg-indigo-600 text-white":"text-gray-700 hover:bg-gray-100"}`}>{children}</NavLink>);
+export default function Nav(){ return (<header className="bg-white border-b shadow-sm"><div className="container mx-auto px-4 py-3 flex items-center"><div className="flex items-center gap-4"><NavItem to="/">Jobs</NavItem><NavItem to="/candidates">Candidates</NavItem><NavItem to="/upload">Resume Upload</NavItem><NavItem to="/matches">Matches</NavItem></div></div></header>); }
